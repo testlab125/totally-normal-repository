@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Valentín</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+    <img id="gif" src="img/def.gif" alt="San Valentín">
+
+    <h1 id="question">¿Quieres ser mi San Valentín?</h1>
+    
+    <div class="buttons" id="buttons">
+        <button class="yes" 
+            onmouseover="changeGif('img/yes.gif')" 
+            onmouseout="changeGif('img/def.gif')" 
+            onclick="showMessage()">Sí</button>
+            
+        <button class="no" 
+            onmouseover="changeGif('img/no.gif'); " 
+            onmouseout="changeGif('img/def.gif')"
+            onclick="moveButton()">No</button>
+    </div>
+
+    <p id="message">¡Sabía que dirías que sí! ❤️</p>
+    <div id="confetiContainer"></div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
